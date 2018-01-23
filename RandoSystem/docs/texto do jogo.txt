@@ -1,0 +1,17 @@
+Há muito tempo, em um reino distante, havia uma aldeia. Nesta aldeia morava um mago. Certa vez, os aldeões resolveram expulsar o mago por causa de suas trapalhadas.
+Como castigo, o mago enfeitiçou a vila, cercando-a com uma parede de árvores mágicas, com uma única entrada. Para sair ou entrar na aldeia, é necessário atravessar um labirinto formado de maneira aleatória pelas árvores mágicas.
+Infelizmente, é necessário que alguém saia e entre para caçar alimento para os aldeões. 
+
+De acordo com a experiência da pessoa que tenta sair, as árvores mágicas criam um labirinto mais ou menos complexo.
+
+Sua missão é conseguir se tornar o Mestre do labirinto e tentar ensinar os aldeões a entrarem e saírem da aldeia. 
+
+
+Long ago, in a kingdom far away, there was a village. In this village lived a magician. The villagers resolved to cast out the magician, because of his jumbles.
+
+As a punishment, the magician has cast a spell on the village, surrounding it with a wall of magical trees, with a single entry. To leave or enter the village, is necessary to pass through a maze randomly created by the magic trees.
+Unfortunately, someone has to go out and hunt food for the villagers.
+
+According to the experience of the person who tries to leave, the trees create a  more or less complex maze.
+
+Your mission is to become the Master of the maze and try to teach the villagers how to enter and leave the village.

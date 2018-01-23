@@ -1,0 +1,12 @@
+Nível 1: 10 - aprendiz / apprentice
+- Condição para sair: média nos últimos 10 jogos: 22
+
+Nível 2: 15 - amador / amateur
+- Condição para sair: média nos últimos 10 jogos: 32
+
+Nível 3: 20 - profissional / professional
+- Condição para sair: média nos últimos 5 jogos: 80
+
+Nível 4: 40 - mestre / master
+- Último nível nesta versão.
+

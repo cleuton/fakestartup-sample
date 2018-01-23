@@ -1,0 +1,12 @@
+<?php
+if(!isset($_SESSION))
+{
+	session_start();
+}
+	session_destroy();
+?>
+<html>
+<body>
+<h3>Logoff</h3>
+</body>
+</html>

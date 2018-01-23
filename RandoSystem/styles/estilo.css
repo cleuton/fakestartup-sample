@@ -1,0 +1,218 @@
+@CHARSET "UTF-8";
+
+#div-topo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 90px;
+		background-color: #FF7F50;
+}
+
+#div-conteudo {
+		position: relative;
+		font-family: 'Knewave', cursive;
+		font-size: medium;
+		color: #A52A2A;
+}
+
+#img-levelimg {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		height: 60px;
+		width: 60px;
+		background-color: #FF7F50;
+		border: 0;
+}
+
+#spn-levelname {
+		position: absolute;
+		top: 67px;
+		left: 2px;
+		font-family: 'Arial', sans-serif;
+		font-size: small;
+		font-weight: bold;
+}
+
+#spn-titulo1 {
+		position: absolute;
+		top:  5px;
+		left: 90px;
+		font-family: 'Frijole', cursive;
+		font-size: xx-large;
+		font-weight: bold;
+		color: #8B0000;
+		text-shadow: 4px 4px 4px #ccc;
+}
+
+.recordes {
+
+		font-family: 'Frijole', cursive;
+		font-size: large;
+		color: #4B0082;
+		text-shadow: 4px 4px 4px #ccc;
+		text-decoration: none;
+}
+
+#spn-titulo2 {
+		position: absolute;
+		top:  5px;
+		left: 235px;
+		font-family: 'Frijole', cursive;
+		font-size: xx-large;
+		font-weight: bold;
+		color: #4B0082;
+		text-shadow: 4px 4px 4px #ccc;
+}
+
+#spn-subtitulo {
+		position: absolute;
+		top:  45px;
+		left: 90px;
+		font-family: 'Irish Grover', cursive;
+		font-size: medium;
+		font-weight: bold;
+		color: #B22222;
+}
+
+#div-menu {
+		position: absolute;
+		top:  63px;
+		left: 90px;
+		font-family: 'Frijole', cursive;
+		font-size: medium;
+		font-weight: bold;
+		color: #4B0082;
+}
+
+#spn-novo:hover {
+		background-color:#4B0082;
+		color:#FF7F50;
+}
+
+#spn-desisto:hover {
+		background-color:#4B0082;
+		color:#FF7F50;
+}
+
+#spn-ajuda:hover {
+		background-color:#4B0082;
+		color:#FF7F50;
+}
+
+#spn-sobre:hover {
+		background-color:#4B0082;
+		color:#FF7F50;
+}
+
+#div-conteudo {
+		position: absolute;
+		top: 90px;
+		left: 0;
+}
+
+#img-setaesq {
+		position: absolute;
+		top: 5px;
+		left: 410px;
+		height: 50px;
+}
+
+#img-setacima {
+		position: absolute;
+		top: 5px;
+		left: 460px;
+		height: 50px;
+}
+
+#img-setabaixo {
+		position: absolute;
+		top: 5px;
+		left: 506px;
+		height: 60px;
+}
+
+#img-setadir {
+		position: absolute;
+		top: 5px;
+		left: 560px;
+		height: 50px;
+}
+
+#div-timer {
+		position: absolute;
+		top: 60px;
+		left: 460px;
+		font-family: 'Knewave', cursive;
+		font-size: large;
+		color: #A52A2A;
+		text-shadow: 2px 2px 2px #ccc;
+}
+
+#div-popup {
+		font-family: 'Irish Grover', cursive;
+		font-size: x-large;
+		font-weight: bold;
+		color: #FF8C00;
+		text-shadow: 2px 2px 2px #555;
+}
+
+#spn-desistiu {
+		text-align: center;
+		font-family: 'Irish Grover', cursive;
+		font-size: x-large;
+		font-weight: bold;
+		color: #FF8C00;
+		text-shadow: 2px 2px 2px #555;
+}
+
+#spn-fechar {
+		text-align: center;
+		font-family: 'Irish Grover', cursive;
+		font-size: large;
+		font-weight: bold;
+		color: #4B0082;
+		text-shadow: 2px 2px 2px #ccc;
+}
+
+#div-record {
+		font-family: 'Irish Grover', cursive;
+		font-size: x-large;
+		font-weight: bold;
+		color: #FF8C00;
+		text-shadow: 2px 2px 2px #555;
+}
+
+#spn-record {
+		text-align: center;
+		font-family: 'Irish Grover', cursive;
+		font-size: x-large;
+		font-weight: bold;
+		color: #FF8C00;
+		text-shadow: 2px 2px 2px #555;
+}
+
+#spn-fecharrecord {
+		text-align: center;
+		font-family: 'Irish Grover', cursive;
+		font-size: large;
+		font-weight: bold;
+		color: #4B0082;
+		text-shadow: 2px 2px 2px #ccc;
+}
+
+#div-desistir {
+		text-align: center;
+}
+
+.selected {
+	position: relative;
+	border:2px solid;
+	border-radius:25px;
+}
+
+
+.imagelevel {
+	position: relative;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levels>
+	<level>
+		<number>1</number>
+		<title>aprendiz</title>
+		<english>Apprentice</english>
+		<games>2</games>
+		<!-- <games>10</games> -->
+		<rows>10</rows>
+		<cols>10</cols>
+		<average>100</average>
+		<picture>aprendiz</picture>
+		<!--  <average>22</average>  -->
+	</level>
+	<level>
+		<number>2</number>
+		<title>amador</title>
+		<english>Amateur</english>
+		<games>2</games>
+		<!-- <games>10</games> -->
+		<rows>13</rows>
+		<cols>13</cols>
+		<average>100</average>
+		<picture>amador</picture>
+		<!--  <average>30</average>  -->
+	</level>
+	<level>
+		<number>3</number>
+		<title>praticante</title>
+		<english>Practitioner</english>
+		<games>2</games>
+		<!-- <games>10</games> -->
+		<rows>15</rows>
+		<cols>15</cols>
+		<average>100</average>
+		<picture>praticante</picture>
+		<!--  <average>32</average>  -->
+	</level>
+	<level>
+		<number>4</number>
+		<title>profissional</title>
+		<english>Professional</english>
+		<games>1</games>
+		<!-- <games>10</games> -->
+		<rows>20</rows>
+		<cols>20</cols>
+		<average>180</average>
+		<picture>profissional</picture>
+		<!--  <average>80</average>  -->
+	</level>	
+	<level>
+		<number>5</number>
+		<title>mestre</title>
+		<english>Master</english>
+		<games>0</games>
+		<rows>30</rows>
+		<cols>30</cols>
+		<average>0</average>
+		<picture>mestre</picture>
+	</level>
+
+</levels>
