@@ -2,6 +2,8 @@
 
 Código de exemplo do projeto Fakestartup: Um game de labirinto, feito com PHP + PostgreSQL + Javascript/jQuery.
 
+Este game foi parte do Curso de Pós graduação de Jogos Sociais que eu desenvolvi, e foi publicado, por um tempo no Facebook. Foi também o exercício prático do Curso de Jogos Sociais que eu desenvolvi e ministrei para várias turmas.
+
 ## Como criar um game Web
 
 Este projeto é composto por uma parte servidora, em PHP, contendo páginas dinâmicas e RESTful services, e uma parte Cliente, em HTML5 + jQuery, que renderiza os labirintos e serve de GUI.
