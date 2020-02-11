@@ -1,3 +1,5 @@
+[![](./banner_livros2.png)](https://www.lcm.com.br/site/#livros/busca?term=cleuton)
+
 # fakestartup-sample
 
 Código de exemplo do projeto Fakestartup: Um game de labirinto, feito com PHP + PostgreSQL + Javascript/jQuery.
