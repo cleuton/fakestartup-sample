@@ -1,11 +1,13 @@
-docker run --name some-postgres -e POSTGRES_PASSWORD=password -d postgres
+docker run --name some-postgres -e POSTGRES_PASSWORD=password -d postgres:9.6
+docker cp ./bancoRandoSystem.sql some-postgres:/bancoRandoSystem.sql
 # PSQL
-docker run -it --rm --link some-postgres:postgres postgres psql -h postgres -U postgres
-# PGADMIN
-docker run -p 8088:80 --link some-postgres:postgres \
--e "PGADMIN_DEFAULT_EMAIL=seuemail@seuprovedor.com" \
--e "PGADMIN_DEFAULT_PASSWORD=password" \
--d dpage/pgadmin4
+docker exec -it some-postgres bash
+psql -U postgres
+CREATE DATABASE randosystem WITH OWNER = postgres;
+\c randosystem 
+\i /bancoRandoSystem.sql
+\q
+exit
 
 Conectar ao servidor some-postgres e criar o banco randosystem com o script 
 Depois de criar o banco, remova o container para não conflitar com o Apache ou rode o apache mapeando a porta 80 para 8080

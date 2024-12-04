@@ -66,32 +66,29 @@ Para o PostgreSQL e o PGAdmin, há imagens prontas e, para o Apache + PHP, há u
 
 # Subindo o ambiente
 
+Como o **PHP 5** utilizado nesse game é muito antigo, vamos ter que adaptar algumas coisas...
+
 **1) Suba o PostgreSQL**
 
 ```
-docker run --name some-postgres -e POSTGRES_PASSWORD=password -d postgres
+docker run --name some-postgres -e POSTGRES_PASSWORD=password -d postgres:9.6
 ````
 
 Você baixará uma imagem "postgres" e subirá um container com um PostgreSQL rodando. A máquina se chamará "some-postgres" e a senha do usuário "postgres" será "password".
 
-**2) Suba o PGAdmin**
+**2) Suba o arquivo sql para o container**
 
+```shell
+cd fakestartup-sample 
+docker cp ./bancoRandoSystem.sql some-postgres:/bancoRandoSystem.sql
+docker exec -it some-postgres bash
+psql -U postgres
+CREATE DATABASE randosystem WITH OWNER = postgres;
+\c randosystem 
+\i /bancoRandoSystem.sql
+\q
+exit
 ```
-docker run -p 8088:80 --link some-postgres:postgres \
--e "PGADMIN_DEFAULT_EMAIL=seuemail@seuprovedor.com" \
--e "PGADMIN_DEFAULT_PASSWORD=password" \
--d dpage/pgadmin4
-```
-
-Abra um navegador e digite [http://localhost:8088](http://localhost:8088) para abrir o PGAdmin: 
-
-![PGAdmin](imagens/fig4.png)
-
-Crie um Server apontando para a máquina "some-postgres" (O container dele está "linkado" ao do PGAdmin através da opção "--link", do comando "docker run"). Lembre-se de mudar o usuário para "postgres" e a senha para "password".
-
-Clique no servidor e escolha "Create Database", criando um banco chamado "randosystem".
-
-Selecione o novo banco de dados e use o menu "tools / query editor" para colar o conteúdo do arquivo ["bancoRandoSystem.sql"](bancoRandoSystem.sql). Execute a query.
 
 **3) Faça build da imagem do Apache-PHP**
 
@@ -104,7 +101,7 @@ Após o build, crie um container com esta imagem:
 docker run --name apache -p 80:80 --link some-postgres:postgres -d apache-php /bin/bash /var/www/run_apache.sh
 ```
 
-Pronto! Para acessar o jogo, abra um navegador e aponte para: [http://localhost](http://localhost).
+Pronto! Para acessar o jogo, abra um navegador e aponte para: [http://localhost/index.php](http://localhost/index.php).
 
 ## Comandos extras
 

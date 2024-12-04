@@ -9,7 +9,7 @@
 	$gl = new GameLogic();
 	
 	if (!isset($_SESSION['userid'])) {
-		// Isto terá que ser substituído pelo checkin do facebook
+		// Isto terï¿½ que ser substituï¿½do pelo checkin do facebook
 		$_SESSION['gl'] = $gl;
 		$gl->logon(9055);
 		$gl->loadapc();
@@ -45,6 +45,11 @@ resolvido = true;
 posx = 0;
 posy = 0;
 KEY_UP1 = 73; // i
+KEY_UP = 38;
+//// 37-left, 38-up, 39-right, 40 - down
+KEY_DOWN = 40;
+KEY_LEFT = 37;
+KEY_RIGHT = 39; 
 KEY_DOWN1 = 75; // k
 KEY_RIGHT1 = 76; // l
 KEY_LEFT1 = 74; // j
@@ -105,6 +110,7 @@ $(document).ready(function(){
 	  $(document).bind('keyup', function(e){
 		    var code = e.keyCode;
 		    switch(code) {
+			case KEY_LEFT:
 		    case KEY_LEFT1: 
 			    // Left
 			    mover(-1,0);
@@ -113,6 +119,7 @@ $(document).ready(function(){
 			    // Left
 			    mover(-1,0);
 			    break;
+			case KEY_UP:
 		    case KEY_UP1: 
 			    // Up
 			    mover(0,-1);
@@ -121,6 +128,7 @@ $(document).ready(function(){
 			    // Up
 			    mover(0,-1);
 			    break;
+			case KEY_RIGHT:
 		    case KEY_RIGHT1: 
 			    // Right
 			    mover(+1,0);
@@ -129,6 +137,7 @@ $(document).ready(function(){
 			    // Right
 			    mover(+1,0);
 			    break;
+			case KEY_DOWN:
 			case KEY_DOWN1: 
 			    // Down
 			    mover(0,+1);
